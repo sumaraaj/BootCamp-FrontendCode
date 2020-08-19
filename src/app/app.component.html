@@ -1,0 +1,25 @@
+<div  class="container">  
+  <h1 align="center" class="jumbotron jumbotron-fluid">Welcome To EvergreenBookStore <img src="https://www.netclipart.com/pp/m/27-272447_learning-vector-read-book-logo-for-education-png.png" width="200" alt=""></h1>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+    
+    &nbsp;&nbsp;&nbsp;<button class="btn btn-success" routerLink='/addOrder/:orderId'>Add ORDER</button>&nbsp;
+  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;<button class="btn btn-success" routerLink='/deleteOrder/:orderId'>DELETE ORDER</button>&nbsp;
+  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;<button class="btn btn-success" routerLink='/updateOrder/:orderId'>UPDATE ORDER</button>&nbsp;
+  &nbsp;&nbsp;&nbsp;
+  </div>
+<!--<ul class="nav nav-pills ">
+    <li class="nav22-item ">
+      <li class="nav-item ">
+        <a class="nav-link" class="btn btn-outline-secondary  btn-sm  mr-3" [routerLink]="['/addOrder/:orderId']">ADD ORDER</a>  <br>
+        <a class="nav-link" class="btn btn-outline-secondary  btn-sm  mr-3" [routerLink]="['/deleteOrder/:orderId']">DELETE ORDER</a><br>
+
+        
+      <a class="nav-link" class="btn btn-outline-secondary  btn-sm  mr-3" [routerLink]="['/updateOrder/:orderId']">UPDATE ORDER</a>
+    </li>
+      </ul> -->    
+    <router-outlet></router-outlet>  

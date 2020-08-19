@@ -1,0 +1,23 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+
+
+<section class="col-md-4 mx-auto">
+    <br><br><br><br> <h2 class="test-center hd" >DELETE ORDER</h2>
+    <div class="st">
+        <form #frm="ngForm" (ngSubmit) ="deleteOrder(frm.value)">
+          <br>  <div >Order ID</div>
+            <div><input type="number" name="oid" [(ngModel)] ="orderId" required #modeloid="ngModel" class="form-control"></div>
+            <div class="alert alert-danger" *ngIf = "modeloid.invalid && modeloid.touched">Order ID is required</div>
+
+      <br><br>  <div class="mt-2 text-center"><input type="submit" value="Delete Order" [disabled]="!frm.valid" class="btn btn-danger"/> 
+   &nbsp; &nbsp; &nbsp; <input type="button" value="Back" onclick="history.back(-1)" /></div></form>
+    </div>
+<div>
+ <h2>{{errormessage}}</h2>
+</div>
+    
+</section>
